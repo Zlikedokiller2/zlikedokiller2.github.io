@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	
+	<body>
+		<div id="header">
+			<p>The JavaScript Test</p>
+		</div>
+		<script>
+			function powWithIterations(num, it){
+				var number = num;
+				var iterations = it;
+				
+				for (i=0;i<iterations;i++){
+					number = number * num
+				}
+				return number
+			}
+			
+			var chosenNumber = 12;
+			var chosenIteration = 100;
+			var poW = powWithIterations(chosenNumber,chosenIteration);
+				
+			document.write("This is what you asked for : " + poW + ". <br/>It represents " + chosenNumber + " to the power of " + chosenIteration + ".");
+			
+		</script>
+	</body>
+</html>
